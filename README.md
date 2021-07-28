@@ -1,5 +1,5 @@
 
-# node-red-contrib-elasticsearch
+# node-red-contrib-elasticsearch-max
 
 ## The all in one Elasticsearch contribution package for Node-RED.
 
