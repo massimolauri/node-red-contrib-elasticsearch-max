@@ -1,0 +1,34 @@
+{
+	"name": "node-red-contrib-elasticsearch-max",
+	"version": "1.2.0",
+	"description": "elasticsearch Wrapper for NodeRed",
+	"main": "elasticsearch-index.js",
+	"node-red": {
+		"nodes": {
+			"elasticsearch-config": "elasticsearch/elasticsearch-config.js",
+			"elasticsearch-get": "elasticsearch/elasticsearch-get.js",
+			"elasticsearch-search": "elasticsearch/elasticsearch-search.js",
+			"elasticsearch-bulk": "elasticsearch/elasticsearch-bulk.js",
+			"elasticsearch-create-index": "elasticsearch/elasticsearch-create-index.js",
+			"elasticsearch-index": "elasticsearch/elasticsearch-index.js",
+			"elasticsearch-update": "elasticsearch/elasticsearch-update.js",
+			"elasticsearch-index-exists": "elasticsearch/elasticsearch-index-exists.js",
+			"elasticsearch-refresh-index": "elasticsearch/elasticsearch-refresh-index.js",
+			"elasticsearch-delete": "elasticsearch/elasticsearch-delete.js",
+			"elasticsearch-deleteByQuery": "elasticsearch/elasticsearch-deleteByQuery.js"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/massimolauri/node-red-contrib-elasticsearch-max.git"
+	},
+	"keywords": [
+		"node-red",
+		"elasticsearch"
+	],
+	"dependencies": {
+		"elasticsearch": "^16.7.2"
+	},
+	"author": "Massimo Lauri",
+	"license": "ISC"
+}

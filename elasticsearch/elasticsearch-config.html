@@ -1,0 +1,47 @@
+<!-- ***************** SERVER CONFIG *********************** -->
+<script type="text/x-red" data-template-name="elasticsearch-config">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-server"><i class="fa fa-tag"></i> Server URL</label>
+        <input type="text" id="node-config-input-server" placeholder="Server URL">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-user"><i class="fa fa-tag"></i> User</label>
+        <input type="text" id="node-config-input-user" placeholder="User">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-password"><i class="fa fa-tag"></i> Password</label>
+        <input type="text" id="node-config-input-password" placeholder="Password">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-timeout"> Timeout</label>
+        <input type="number" id="node-config-input-timeout" placeholder="30000 (in ms)">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-apiVersion"> Api Version</label>
+        <input type="text" id="node-config-input-apiVersion" placeholder="API version (1.7, 3, 7, ...)">
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('elasticsearch-config', {
+        category: 'config',
+        defaults: {
+            name: { value: '' },
+            server: { value: '' },
+            user: { value: '' },
+            password: { value: '' },
+	        timeout: { value: '' },
+            apiVersion: {value: '7.x'}
+
+        },
+        color: "#FFFFFF",
+        icon: "elasticsearch.png",
+        label: function () {
+            return (this.name ? this.name : this.server);
+        }
+    });
+</script>
