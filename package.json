@@ -1,6 +1,6 @@
 {
 	"name": "node-red-contrib-elasticsearch-max",
-	"version": "1.2.1",
+	"version": "1.2.3",
 	"description": "NodeRed elasticsearch wrapper",
 	"main": "elasticsearch-index.js",
 	"node-red": {
@@ -8,8 +8,8 @@
 			"elasticsearch-config": "elasticsearch-max/elasticsearch-config.js",
 			"elasticsearch-get": "elasticsearch-max/elasticsearch-get.js",
 			"elasticsearch-search": "elasticsearch-max/elasticsearch-search.js",
-			"elasticsearch-bulk": "elasticsearch-max/elasticsearch-bulk.js",
 			"elasticsearch-create-index": "elasticsearch-max/elasticsearch-create-index.js",
+			"elasticsearch-create-with-index": "elasticsearch-max/elasticsearch-create-with-index.js",
 			"elasticsearch-index": "elasticsearch-max/elasticsearch-index.js",
 			"elasticsearch-update": "elasticsearch-max/elasticsearch-update.js",
 			"elasticsearch-index-exists": "elasticsearch-max/elasticsearch-index-exists.js",
