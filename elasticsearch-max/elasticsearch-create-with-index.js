@@ -27,6 +27,11 @@ module.exports = function (RED) {
                     }
 
 
+                    if(msg.id) {
+                        indexConfig.id = msg.id
+                    }
+
+
                     serverConfig.client.index(indexConfig).then(function (resp) {
                         msg.payload = resp;
                         node.send(msg);
